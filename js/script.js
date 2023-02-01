@@ -1,4 +1,5 @@
-let darkBtn;
+// let darkBtn;
+document.cookie="darkBtn: false"
 let navbar = document.getElementById("navbar");
 let bodyColor = document.getElementById('body');
 let infoCard = document.getElementById('infoBoxCard');
@@ -30,7 +31,7 @@ sc.innerText= styles;
 
 
 function darkTogglerFunc() {
-    if (!darkBtn) {
+    if (!document.cookie.darkBtn) {
         bodyColor.style = 'background: #121212';
         navbar.style = "background: black !important";
         document.head.appendChild(sc);
@@ -45,7 +46,7 @@ function darkTogglerFunc() {
 
         navInputSrc.style = 'background: black; border:1px solid green !important;color:white !important;';
         btnDarkText.style.color = 'black';
-        darkBtn = true;
+        document.cookie.darkBtn = true;
     }
     else {
         bodyColor.style = 'background: white';
@@ -61,7 +62,7 @@ function darkTogglerFunc() {
         
         navInputSrc.style = 'background: white; border:1px solid #dee2e6;';
         btnDarkText.style.color = 'white';
-        darkBtn = false;
+        document.cookie.darkBtn = false;
     }
 }
 
