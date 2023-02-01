@@ -1,5 +1,5 @@
 // let darkBtn;
-document.cookie="darkBtn = false";
+
 let navbar = document.getElementById("navbar");
 let bodyColor = document.getElementById('body');
 let infoCard = document.getElementById('infoBoxCard');
