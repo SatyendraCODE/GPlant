@@ -31,7 +31,7 @@ sc.innerText= styles;
 
 
 function darkTogglerFunc() {
-    if (!document.cookie.darkBtn) {
+    if (document.cookie.darkBtn=="false") {
         bodyColor.style = 'background: #121212';
         navbar.style = "background: black !important";
         document.head.appendChild(sc);
