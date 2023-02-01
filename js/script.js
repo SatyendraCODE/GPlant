@@ -46,7 +46,7 @@ function darkTogglerFunc() {
 
         navInputSrc.style = 'background: black; border:1px solid green !important;color:white !important;';
         btnDarkText.style.color = 'black';
-        document.cookie.darkBtn = true;
+        document.cookie.darkBtn = "true";
     }
     else {
         bodyColor.style = 'background: white';
@@ -62,7 +62,7 @@ function darkTogglerFunc() {
         
         navInputSrc.style = 'background: white; border:1px solid #dee2e6;';
         btnDarkText.style.color = 'white';
-        document.cookie.darkBtn = false;
+        document.cookie.darkBtn = "false";
     }
 }
 
